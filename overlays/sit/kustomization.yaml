@@ -6,7 +6,7 @@ resources:
 
 images:
 - name: asia.gcr.io/poc-innovation-iot/duke-user-inquiry-service
-  tag: 02df28e0
+  newTag: test
 
   # - behavior: merge
   #   envs:
