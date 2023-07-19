@@ -1,0 +1,26 @@
+environment: local
+
+app:
+  name: user-inquiry-service
+
+server:
+  port: 8082
+  timeout: 60
+
+log:
+  environment: production 
+  level: info
+  format: json
+
+postgres:
+  host: localhost
+  port: 5432
+  db-name: example-db
+
+redis:
+  address: localhost:6379
+  password:
+  database: 0
+
+user-list-key: users
+
