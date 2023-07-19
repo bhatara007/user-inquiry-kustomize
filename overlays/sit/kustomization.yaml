@@ -23,10 +23,10 @@ secretGenerator:
     envs:
       - secrets/secret.env
     name: user-inquiry-secret-env
-  - behavior: merge
-    files:
-      - secrets/secret.yaml
-    name: user-inquiry-secret-file
+  # - behavior: merge
+  #   files:
+  #     - secrets/secret.yaml
+  #   name: user-inquiry-secret-file
 
 patches:
     - path: patches/set_resources.yaml
