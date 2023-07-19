@@ -4,13 +4,13 @@ resources:
   - resources/deployment.yaml
   - resources/service.yaml
 configMapGenerator:
-  - name: user-inquiry-configmap-env
+  - name: duke-user-inquiry-service-configmap-env
     envs:
       - configs/config.env
-  - name: user-inquiry-configmap-file
+  - name: duke-user-inquiry-service-configmap-file
     files:
       - configs/config.yaml
 secretGenerator:
-  - name: user-inquiry-secret-env
+  - name: duke-user-inquiry-service-secret-env
     envs:
       - secrets/secret.env

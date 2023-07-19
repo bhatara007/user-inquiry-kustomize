@@ -5,23 +5,23 @@ resources:
   - ../../base
 
 images:
-  - name: asia.gcr.io/poc-innovation-iot/duke-training/user-inquiry
+  - name: asia.gcr.io/poc-innovation-iot/duke-training/duke-user-inquiry-service
 
 configMapGenerator:
   - behavior: merge
     envs:
       - configs/config.env
-    name: user-inquiry-configmap-env
+    name: duke-user-inquiry-service-configmap-env
   - behavior: merge
     files:
       - configs/config.yaml
-    name: user-inquiry-configmap-file
+    name: duke-user-inquiry-service-configmap-file
 
 secretGenerator:
   - behavior: merge
     envs:
       - secrets/secret.env
-    name: user-inquiry-secret-env
+    name: duke-user-inquiry-service-secret-env
 
 patches:
   - patches/set_resources.yaml

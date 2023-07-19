@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: user-inquiry
+  name: duke-user-inquiry-service
   labels:
-    app.kubernetes.io/name: user-inquiry
-    app.kubernetes.io/instance: user-inquiry
+    app.kubernetes.io/name: duke-user-inquiry-service
+    app.kubernetes.io/instance: duke-user-inquiry-service
 spec:
   type: ClusterIP
   ports:
@@ -13,5 +13,5 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app.kubernetes.io/name: user-inquiry
-    app.kubernetes.io/instance: user-inquiry
+    app.kubernetes.io/name: duke-user-inquiry-service
+    app.kubernetes.io/instance: duke-user-inquiry-service

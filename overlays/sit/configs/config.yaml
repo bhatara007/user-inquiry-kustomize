@@ -1,7 +1,7 @@
 environment: local
 
 app:
-  name: user-inquiry-service
+  name: duke-user-inquiry-service-service
 
 server:
   port: 8082

@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: user-inquiry
+  name: duke-user-inquiry-service
 spec:
   replicas: 1
   template:
     spec:
       containers:
-        - name: user-inquiry
+        - name: duke-user-inquiry-service
           resources:
             limits:
               cpu: 200m
