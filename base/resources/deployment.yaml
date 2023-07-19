@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: user-inquiry
-          image: asia.gcr.io/poc-innovation-iot/duke-training/user-inquiry:TAG
+          image: asia.gcr.io/poc-innovation-iot/duke-training/user-inquiry
           imagePullPolicy: IfNotPresent
           envFrom:
             - configMapRef:

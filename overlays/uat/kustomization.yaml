@@ -6,7 +6,6 @@ resources:
 
 images:
   - name: asia.gcr.io/poc-innovation-iot/duke-training/user-inquiry
-    newTag: v1.4
 
 configMapGenerator:
   - behavior: merge
