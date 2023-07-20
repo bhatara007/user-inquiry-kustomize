@@ -23,10 +23,6 @@ secretGenerator:
   envs:
   - secrets/secret.env
   name: duke-user-inquiry-service-secret-env
-- behavior: merge
-  files:
-    - secrets/secret.yaml
-  name: duke-user-inquiry-service-secret-file
 
 patches:
 - path: patches/set_resources.yaml
