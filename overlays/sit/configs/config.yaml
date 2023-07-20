@@ -1,10 +1,10 @@
 environment: local
 
 app:
-  name: duke-user-inquiry-service-service
+  name: duke-user-inquiry-service
 
 server:
-  port: 8082
+  port: 8080
   timeout: 60
 
 log:
@@ -13,14 +13,13 @@ log:
   format: json
 
 postgres:
-  host: localhost
+  host: 172.28.240.42
   port: 5432
-  db-name: example-db
 
 redis:
-  address: localhost:6379
-  password:
-  database: 0
+  address: 172.28.241.3:6379
+  database: 1
+  authString: 92008bf3-478e-4aaf-9a41-007423d8bfb6
 
 user-list-key: users
 
