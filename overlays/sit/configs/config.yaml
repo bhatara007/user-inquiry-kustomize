@@ -20,7 +20,6 @@ postgres:
 redis:
   address: 172.28.241.3:6379
   database: 1
-  auth-string: 92008bf3-478e-4aaf-9a41-007423d8bfb6
 
 user-list-key: users
 
