@@ -23,8 +23,6 @@ spec:
           image: asia.gcr.io/poc-innovation-iot/duke-user-inquiry-service
           imagePullPolicy: IfNotPresent
           envFrom:
-            - configMapRef:
-                name: duke-user-inquiry-service-configmap-env
             - secretRef:
                 name: duke-user-inquiry-service-secret-env
           ports:
