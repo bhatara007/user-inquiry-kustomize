@@ -56,9 +56,9 @@ spec:
             - name: duke-user-inquiry-service-configmap-file
               mountPath: /configs/config.yaml
               subPath: config.yaml
-            - name: duke-user-inquiry-service-secret-file
-              mountPath: /configs/config.yaml
-              subPath: config.yaml
+            # - name: duke-user-inquiry-service-secret-file
+            #   mountPath: /configs/config.yaml
+            #   subPath: config.yaml
 
       volumes:
         - name: duke-user-inquiry-service-configmap-file
