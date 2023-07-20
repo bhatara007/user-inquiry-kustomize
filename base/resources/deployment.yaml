@@ -7,7 +7,6 @@ metadata:
     app.kubernetes.io/instance: duke-user-inquiry-service
 spec:
   replicas: 1
-  revisionHistoryLimit: 3
   selector:
     matchLabels:
       app.kubernetes.io/name: duke-user-inquiry-service
@@ -20,11 +19,15 @@ spec:
     spec:
       containers:
         - name: duke-user-inquiry-service
-          image: asia.gcr.io/poc-innovation-iot/duke-user-inquiry-service
+          image: asia.gcr.io/poc-innovation-iot/duke-user-inquiry-service:TAG
           imagePullPolicy: IfNotPresent
           envFrom:
             - secretRef:
                 name: duke-user-inquiry-service-secret-env
+          volumeMounts:
+              - mountPath: /config/config.yaml
+                name: duke-user-inquiry-service-configmap-file
+                subPath: config.yaml
           ports:
             - name: http
               containerPort: 8080
@@ -32,29 +35,22 @@ spec:
           livenessProbe:
             httpGet:
               path: /
-              port: 8080
+              port: http
             timeoutSeconds: 10
             initialDelaySeconds: 10
-            periodSeconds: 20
           readinessProbe:
             httpGet:
               path: /
-              port: 8080
+              port: http
             timeoutSeconds: 10
             initialDelaySeconds: 10
-            periodSeconds: 15
           resources:
             limits:
-              cpu: 500m
-              memory: 256Mi
+              cpu: 64m
+              memory: 64Mi
             requests:
-              cpu: 400m
-              memory: 256Mi
-          volumeMounts:
-            - name: duke-user-inquiry-service-configmap-file
-              mountPath: /config/config.yaml
-              subPath: config.yaml
-
+              cpu: 32m
+              memory: 32Mi
       volumes:
         - name: duke-user-inquiry-service-configmap-file
           configMap:
