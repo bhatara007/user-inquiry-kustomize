@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: duke-user-inquiry-service
-          image: asia.gcr.io/poc-innovation-iot/duke-training/duke-user-inquiry-service
+          image: asia.gcr.io/poc-innovation-iot/duke-user-inquiry-service
           imagePullPolicy: IfNotPresent
           envFrom:
             - configMapRef:

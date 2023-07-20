@@ -5,7 +5,7 @@ resources:
   - ../../base
 
 images:
-  - name: asia.gcr.io/poc-innovation-iot/duke-training/duke-user-inquiry-service
+  - name: asia.gcr.io/poc-innovation-iot/duke-user-inquiry-service
     newTag: v1.4
 
 configMapGenerator:
