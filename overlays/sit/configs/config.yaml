@@ -15,6 +15,7 @@ log:
 postgres:
   host: 172.28.240.42
   port: 5432
+  db_name: duke-db
 
 redis:
   address: 172.28.241.3:6379
