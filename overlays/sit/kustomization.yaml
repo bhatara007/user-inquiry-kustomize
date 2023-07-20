@@ -8,7 +8,7 @@ images:
 - name: asia.gcr.io/poc-innovation-iot/duke-user-inquiry-service
   newTag: bf430a66
 - name: asia.gcr.io/poc-innovation-iot/duke-user-producer-service
-  newTag: 104be2cc
+  newTag: 4d851be0
 
 configMapGenerator:
 - behavior: merge
