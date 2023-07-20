@@ -52,7 +52,7 @@ spec:
               memory: 256Mi
           volumeMounts:
             - name: duke-user-inquiry-service-configmap-file
-              mountPath: /configs/config.yaml
+              mountPath: app/config/config.yaml
               subPath: config.yaml
 
       volumes:
