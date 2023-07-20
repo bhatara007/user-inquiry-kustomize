@@ -8,10 +8,6 @@ images:
 - name: asia.gcr.io/poc-innovation-iot/duke-user-inquiry-service
   newTag: 02df28e0
 
-  # - behavior: merge
-  #   envs:
-  #     - configs/config.env
-  #   name: duke-user-inquiry-service-configmap-env
 configMapGenerator:
 - behavior: merge
   files:
