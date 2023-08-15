@@ -10,8 +10,8 @@ spec:
         - name: duke-user-inquiry-service
           resources:
             limits:
-              cpu: 300m
-              memory: 64Mi
+              cpu: 200m
+              memory: 96Mi
             requests:
               cpu: 200m
               memory: 32Mi
